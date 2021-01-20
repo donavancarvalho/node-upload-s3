@@ -37,12 +37,6 @@ app.post('/upload', upload, (req, res) => {
 
         res.status(200).send(data);
     });
-
-    // console.log(req.file);
-
-    // res.send({
-    //     message: 'Hello World'
-    // });
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
